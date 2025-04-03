@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática de Lógica Vetorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prática de Lógica Vetorial</h1>
+
+        <section class="section">
+            <h2>Operaçõs Vetoriais</h2>
+            <div class="input-group">
+                <label for="vectorl">Veto 1</label>
+                <input type="text" id="vectorl" value=" 1,2,3,4,5">
+            </div>
+            <div class="input-group">
+                <label for="vector2">Vetor 2</label>
+                <input type="text" id="vector2" value=" 6,7,8,9,10">
+            </div>
+            <button id="calcuteVectors">Calcula Operaçõs</button>
+            <div id="vetorsResults" class="resutado"></div>
+        </section>
+
+        <section>
+            <h2>Cálculo Média</h2>
+            <div class="input-gropu">
+                <label for="grades">Notas</label>
+                <input type="text" id="grades" value="0,1,2,3,4,5,6,7,8,9,">
+            </div>
+            <button id="calcuteAverage">Calcula Média</button>
+            <div id="averageResults" class="resutado"></div>
+        </section>
+
+        <section class="section">
+            <h2>Portas Lógicas</h2>
+            <div class="logic-gates">
+                <div class="gates">
+                    <h3>Prta Tipo AND</h3>
+                    <div class="inputs">
+                        <label>
+                            <input type="checkbox" class="and-input" id="andInput1">Entrada 1
+                        </label>
+                        <label>
+                            <input type="checkbox" class="and-input" id="andInput2">Entrada 2
+                        </label>
+                    </div>
+                    <div class="output" id="andOutput">Saida: 0</div>
+                </div>
+
+                <div class="gates">
+                    <h3>Porta Tipo OR</h3>
+                    <div class="inputs">
+                        <label>
+                            <input type="checkbox" class="or-input" id="orInput1">Entrada 1
+                        </label>
+                        <label>
+                            <input type="checkbox" class="or-input" id="orInput2">Entrada 2
+                        </label>
+                    </div>
+                    <div class="output" id="orOutput">Saida: 0</div>
+                </div>
+
+                <div class="gate">
+                    <h3>Porta Tipo XOP</h3>
+                    <div class="inputs">
+                        <label>
+                            <input type="checkbox" class="xor-input" id="xorInput1">Entrada 1
+                        </label>
+                        <label>
+                            <input type="checkbox" class="xor-input" id="xorInput2">Entrada 2
+                        </label>
+                    </div>
+                    <div class="output" id="xorOutput">Saida: 0</div>
+                </div>
+
+
+                <div class="gate">
+                    <h3>Porta Tipo NOT</h3>
+                    <div class="inputs">
+                        <label>
+                            <input type="checkbox" class="not-input" id="notInput">Entrada 1
+                        </label>
+
+                    </div>
+                    <div class="output" id="notOutput">Saida: 0</div>
+                </div>
+            </div> 
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

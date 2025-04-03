@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Moderno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form class="input-group">
+                <lebel for="email">E-mail:</lebel>
+                <input type="email" id="email" name="email" placeholder="aluno@email.com" required>
+                <i class="fa-solid fa-envolepe"></i>
+
+
+
+                <div class="input-group">
+                    <lebel for="password">Senha:</lebel>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="eye" onclick="togglePassword"></span>
+
+                </div>
+
+                <button type="submit">Entrar</button>
+                <p class="cadastro">Não tem uma conta? 
+                    <a href="cadastro.html">Cadastre-se</a>
+                
+                </p>
+
+                </p>
+            </form>
+
+            <div id="mensagen"></div>
+
+            <script src="acesso.js"></script>
+
+
+        </div>
+    </div>
+</body>
+</html>
